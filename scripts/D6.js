@@ -250,6 +250,8 @@ movies.filter((movie) => movie.Year > 1999);
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
 */
 
+console.log(movies.reduce((acc, cur) => acc + parseInt(cur.Year, 10), 0));
+
 
 /* ESERCIZIO 14 (find)
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
